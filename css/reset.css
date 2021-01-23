@@ -1,0 +1,54 @@
+/* 重置样式表 */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #ffffff;
+    font: 12px "宋体"
+}
+
+b,
+strong {
+    font-weight: normal;
+}
+
+i,
+em {
+    font-style: normal;
+}
+
+ul,
+ol,
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+img {
+    vertical-align: middle;
+    border: none;
+}
+
+
+/* 清除浮动 */
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+.clearfix {
+    *zoom: 1;
+}

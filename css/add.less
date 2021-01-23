@@ -1,0 +1,278 @@
+@import "./reset.css";
+.box{
+    .logo{
+        height: 80px;
+        line-height: 80px;
+        font-size: 28px;
+        background-color: #ea967a;
+        color: #fff;
+        padding-left: 50px;
+    }
+    .mess{
+        padding-top: 32px;
+        padding-left: 30px;
+        .mess-title{
+            font-size: 19px;
+            height: 19px;
+            line-height: 19px;
+            margin-bottom: 33px;
+        }
+        form{
+            ul{
+                li{
+                    display: flex;
+                    margin-bottom: 30px;
+                        .form-title{
+                            min-width: 89px;
+                            height: 30px;
+                            line-height: 30px;
+                        
+                            i{
+                                color:#ee2d2d;
+                                float: left;
+                            }
+                            span{
+                                font-size: 16px;
+                                float: left;
+                                margin-left: 5px;
+                            }
+
+                        }
+                        .form-input{
+                            padding-left: 21px;
+                            flex-grow: 1;
+                           
+                            input{
+                                outline: none;
+                                height: 30px;
+                                border: 1px solid#cccccc;
+                                width: 58%;
+                                padding-left: 19px;
+                                box-sizing: border-box;
+
+                            }
+                            textarea{
+                                outline: none;
+                                width: 97%;
+                                height: 200px;
+                            }
+                        }
+
+                        // 产品分类
+                        .list{
+                            display: flex;
+                            padding-left: 21px;
+                            span{
+                                margin-right: 5px;
+                                padding: 7px 10px;
+                                border: 1px solid#cccccc;
+                    
+                                input{
+                                    float: left;
+                                    width: 17px;
+                                    height: 17px;
+
+                                }
+                                i{
+                                    float: left;
+                                    font-size: 14px;
+                                    padding-left: 5px;
+                                }
+                            }
+                            span:last-child{
+                                color: #fff;
+                                border-color: royalblue;
+                                background-color: royalblue;
+                                margin-left: 10px;
+                            }
+                        }
+                        
+
+                        // 商品原价
+                        .price{
+                            width: 33.333333%;
+                            input{
+                                outline: none;
+                                width: 30%;
+                                height: 26px;
+                                border: 1px solid #cccccc;
+                            }
+                        }
+
+                        // 是否上架和允许评论
+                        .whether{
+                            display: flex;
+                            height: 30px;
+                            align-items: center;
+
+                            span{
+                                margin-right: 39px;
+                               
+                                input{
+                                    float: left;
+                                    width: 17px;
+                                    height: 17px;
+                                }
+                                i{
+                                    float: left;
+                                    font-size: 14px;
+                                    padding-left: 5px;
+                                }
+                            }
+                        }
+                
+                }
+            }
+        }
+        .submit{
+            display: flex;
+            justify-content: center;
+            button:nth-of-type(2){
+                margin:0px 40px;
+            }
+            button:nth-of-type(1){
+                outline: none;
+                border: none;
+                width: 80px;
+                height: 30px;
+                color: #fff;
+                background: #4487b2;
+            }
+            button:nth-of-type(2){
+                outline: none;
+                border: none;
+                width: 68px;
+                height: 30px;
+                color: #fff;
+                background: #e5987c;
+            }
+            button:nth-of-type(3){
+                outline: none;
+                border: none;
+                width: 68px;
+                height: 30px;
+                color: #fff;
+                background: #bababa;
+            }
+        }
+    }
+  
+}
+
+// 992px---768px
+@media screen and (max-width:992px) and(min-width:768px){
+    .box{
+        .mess{
+            form{
+                ul{
+                    li{
+                        flex-wrap: wrap;
+                        .form-input{
+                            width: 100%;
+                            padding-left: 0px;
+                            input{
+                                width: 90%;
+                            }
+                            span{
+                                display: block;
+                                width: 100%;
+                            }
+                    
+                        }
+                        .whether{
+                            width: 100%;
+                        }
+                        .price{
+                            width: 100%;
+                            input{
+                                width: 84%;
+                            }
+                        }
+                        .list{
+                            width: 100%;
+                            padding-left: 0px;
+                            flex-wrap: wrap;
+                            justify-content: space-between;
+                            span{
+                                width: 44%;
+                                margin-right: 0px;
+                            
+                                margin-bottom: 10px;
+                            }
+                            span:last-child{
+                                color: #fff;
+                                border-color: royalblue;
+                                background-color: royalblue;
+                                
+                                width: 70px;
+                                margin-left: 0px;
+                                // font-size: 21px;
+                                // transform: scale(0.3);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+// 768px以下
+@media screen and (max-width:768px){
+    .box{
+        min-width: 275px;
+        .mess{
+            form{
+                ul{
+                    li{
+                        flex-wrap: wrap;
+                        .form-input{
+                            width: 100%;
+                            padding-left: 0px;
+                            input{
+                                width: 90%;
+                            }
+                            span{
+                                display: block;
+                                width: 100%;
+                            }
+                            textarea{
+                                width: 88%;
+                            }
+                    
+                        }
+                        .whether{
+                            width: 100%;
+                        }
+                        .price{
+                            width: 100%;
+                            input{
+                                width: 84%;
+                            }
+                        }
+                        .list{
+                            width: 100%;
+                            padding-left: 0px;
+                            flex-wrap: wrap;
+                            // justify-content: space-between;
+                            span{
+                                width: 44%;
+                                margin-right: 4px;
+                            
+                              
+                                margin-bottom: 10px;
+                                min-width: 118px;
+                            }
+                            span:last-child{
+                                color: #fff;
+                                border-color: royalblue;
+                                background-color: royalblue;
+                                width: 70px;
+                                margin-left: 0px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

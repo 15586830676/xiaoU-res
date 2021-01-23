@@ -1,0 +1,94 @@
+@import "reset.css";
+body {
+  width: 100%;
+  height: 100%;
+  background: #ede9d0;
+}
+body h1 {
+  width: 80px;
+  height: 80px;
+  background: url(../image/images/登录-PC_03.jpg) no-repeat;
+  margin: 88px auto 32px ;
+}
+body .waps {
+  width: 25%;
+  height: 473px;
+  background: #fff;
+  margin: 0 auto;
+  border-radius: 5px;
+}
+body .waps .cont {
+  width: 75%;
+  margin: 0 auto;
+}
+body .waps .cont #p {
+  font-size: 25px;
+  padding: 39px 0 33px 0;
+}
+body .waps .cont #form .div p {
+  font-size: 14px;
+  font-weight: bold;
+  color: #394575;
+  margin-bottom: 10px;
+}
+body .waps .cont #form .div input {
+  outline: none;
+  border: 2px solid #d9d9d9;
+  border-radius: 5px;
+  width: 100%;
+  height: 40px;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+}
+body .waps .cont #form .p {
+  font-size: 12px;
+  font-weight: bold;
+  color: #394575;
+  margin-bottom: 10px;
+}
+body .waps .cont #form .p input {
+  margin-right: 5px;
+}
+body .waps .cont #form #input {
+  outline: none;
+  border: none;
+  width: 100%;
+  height: 40px;
+  background: #ff4500;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+body .waps .cont #form .p2 {
+  text-align: center;
+}
+body .waps .cont #form .p2 a {
+  text-decoration: underline;
+  color: #0279d5;
+  font-weight: bold;
+}
+@media screen and (width: 768px) {
+  .logo {
+    display: none;
+  }
+  .waps {
+    margin: 100px auto !important;
+  }
+}
+@media screen and (max-width: 992px) and (min-width: 768px) {
+  .waps {
+    width: 80% !important;
+  }
+}
+@media screen and (max-width: 1200px) and (min-width: 992px) {
+  .waps {
+    width: 80% !important;
+    margin-bottom: 130px !important;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .waps {
+    width: 40% !important;
+  }
+}
